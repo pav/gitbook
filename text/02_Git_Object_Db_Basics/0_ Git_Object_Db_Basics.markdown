@@ -53,3 +53,8 @@ like all use _Delta Storage_ systems - they store the differences between one
 commit and the next.  Git does not do this - it stores a snapshot of what all
 the files in your project look like in this tree structure each time you
 commit. This is a very important concept to understand when using Git.
+
+The above does not mean that Git is less efficient than _Delta Storage_
+systems when it comes to repository size. It actually the opposite in most
+cases. Although Git uses full snapshots on the high level, the underlying object
+storage method is a completely separate thing and can be changed independently.
